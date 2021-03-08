@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <title>WebApp Dashboard</title>
   </head>
 
@@ -26,6 +27,7 @@
           <li><img src="icons/icon-settings.svg" alt="" /></li>
         </ul>
       </div>
+
       <div class="content__container">
         <div class="dashboard__header">
           <h2>Dashboard</h2>
@@ -33,6 +35,81 @@
             <input type="text" placeholder="Search" />
             <img src="icons/icon-search.svg" alt="" />
           </div>
+        </div>
+
+        <div class="content__alert">
+          <span>Alert</span> Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Pariatur reiciendis aliquam ipsum corporis quod veritatis
+          aspernatur illum laudantium!
+          <button>
+            <svg
+              class="close--button"
+              enable-background="new 0 0 512 512"
+              height="512px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="512px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M74.966,437.013c-99.97-99.97-99.97-262.065,0-362.037c100.002-99.97,262.066-99.97,362.067,0  c99.971,99.971,99.971,262.067,0,362.037C337.032,536.998,174.968,536.998,74.966,437.013z M391.782,120.227  c-75.001-74.985-196.564-74.985-271.534,0c-75.001,74.985-75.001,196.55,0,271.535c74.97,74.986,196.533,74.986,271.534,0  C466.754,316.775,466.754,195.212,391.782,120.227z M188.124,369.137l-45.251-45.266l67.876-67.877l-67.876-67.876l45.251-45.267  L256,210.743l67.877-67.892l45.25,45.267l-67.876,67.876l67.876,67.877l-45.25,45.266L256,301.245L188.124,369.137z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="chart__container">
+          <div class="chart__controls">
+            <h3>TRAFFIC</h3>
+            <div class="chart__controls--buttons"></div>
+          </div>
+          <canvas id="myChart" height="50%" width="100%"></canvas>
+          <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myChart = new Chart(ctx, {
+              type: "bar",
+              data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [
+                  {
+                    label: "# of Votes",
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                      "rgba(255, 99, 132, 0.2)",
+                      "rgba(54, 162, 235, 0.2)",
+                      "rgba(255, 206, 86, 0.2)",
+                      "rgba(75, 192, 192, 0.2)",
+                      "rgba(153, 102, 255, 0.2)",
+                      "rgba(255, 159, 64, 0.2)",
+                    ],
+                    borderColor: [
+                      "rgba(255, 99, 132, 1)",
+                      "rgba(54, 162, 235, 1)",
+                      "rgba(255, 206, 86, 1)",
+                      "rgba(75, 192, 192, 1)",
+                      "rgba(153, 102, 255, 1)",
+                      "rgba(255, 159, 64, 1)",
+                    ],
+                    borderWidth: 1,
+                  },
+                ],
+              },
+              options: {
+                scales: {
+                  yAxes: [
+                    {
+                      ticks: {
+                        beginAtZero: true,
+                      },
+                    },
+                  ],
+                },
+              },
+            });
+          </script>
         </div>
       </div>
     </section>

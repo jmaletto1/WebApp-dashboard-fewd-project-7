@@ -14,6 +14,11 @@ p {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 .header__container {
   height: 80px;
   background-color: var(--color-primary);
@@ -34,7 +39,13 @@ h2 {
   font-weight: 500;
   opacity: 0.5;
   font-size: 1.3rem;
-  margin: 1rem;
+  margin-right: 1rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 200;
+  opacity: 0.7;
 }
 
 .header__container img {
@@ -51,7 +62,7 @@ h2 {
   border-radius: 50%;
 }
 
-.header__container span {
+span {
   font-weight: bold;
 }
 
@@ -83,6 +94,7 @@ h2 {
 .main__container {
   display: grid;
   grid-template-columns: minmax(80px, 0.5fr) 9fr;
+  gap: 10px;
 }
 
 .menu__bar {
@@ -108,6 +120,7 @@ h2 {
   text-align: center;
   margin-bottom: 35px;
   opacity: 0.5;
+  transition: opacity 0.4s ease-out;
 }
 
 .menu__bar ul li:hover {
@@ -143,3 +156,36 @@ h2 {
 .search__bar img {
   transform: translateX(-35px);
 }
+
+.content__alert {
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  color: var(--heading-color);
+  display: flex;
+  margin: 1rem;
+  padding: 0.7rem 1.2rem;
+}
+
+.content__alert span {
+  padding-right: 0.5rem;
+}
+
+.content__alert button {
+  margin-left: auto;
+}
+
+.close--button {
+  fill: var(--heading-color);
+  height: 20px;
+  width: 20px;
+}
+
+.chart__container {
+  height: 400px;
+  /* overflow: auto; */
+}
+
+/* #myChart {
+  height: auto;
+  min-width: 100%;
+} */
