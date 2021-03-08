@@ -181,11 +181,5 @@ span {
 }
 
 .chart__container {
-  height: 400px;
-  /* overflow: auto; */
+  max-height: 400px;
 }
-
-/* #myChart {
-  height: auto;
-  min-width: 100%;
-} */
