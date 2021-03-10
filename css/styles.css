@@ -59,6 +59,12 @@ h4 {
   margin-bottom: 0;
 }
 
+h5 {
+  font-size: 0.85rem;
+  font-weight: 200;
+  opacity: 0.7;
+}
+
 .header__container img {
   width: 35px;
   height: 35px;
@@ -301,19 +307,17 @@ span {
 }
 
 .member__row {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
   display: flex;
+  height: 51px;
   margin-bottom: 1rem;
   max-width: 100%;
 }
 
-.member--info h3 {
-  margin-top: 0;
-  padding-top: 0.5rem;
-}
-
 .new__member__container img {
   border-radius: 50%;
-  max-width: 35px;
+  height: 35px;
+  width: 35px;
 }
 
 .member--date {
@@ -332,15 +336,39 @@ span {
 
 .member--info h3 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.member--info h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
   margin-bottom: 0;
 }
 
 .member--info a {
   color: var(--color-primary);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
+  margin-top: 0;
   text-decoration: none;
+}
+
+.member--info p {
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.member--read--more {
+  transition: 0.3s ease-out;
+}
+
+.member--read--more:hover {
+  transform: scale(1.3);
 }
 
 @media screen and (min-width: 768px) {
