@@ -210,18 +210,45 @@ autocomplete({
 
 // Toggler
 
-document.querySelector("#myonoffswitch").addEventListener("click", (e) => {
-  console.log(e);
+const emailCheckbox = document.querySelector("#myonoffswitch");
+const profileCheckbox = document.querySelector("#myonoffswitchtwo");
+const timeZone = document.querySelector("#timezone-offset");
+
+emailCheckbox.addEventListener("change", function () {
+  if (this.checked) {
+    localStorage.setItem("emailPreferences", "true");
+  } else {
+    localStorage.setItem("emailPreferences", "false");
+  }
 });
 
-// users = ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver"];
+profileCheckbox.addEventListener("change", function () {
+  if (this.checked) {
+    localStorage.setItem("profilePreferences", "true");
+  } else {
+    localStorage.setItem("profilePreferences", "false");
+  }
+});
 
-// userSearch.addEventListener("input", () => {
-//   console.log(userSearch.value);
-//   if (users.includes(userSearch.value)) {
-//     console.log("GOOD!");
-//   }
-// });
+timeZone.addEventListener("change", function () {
+  localStorage.setItem("timezonePreferences", `${timeZone.value}`);
+});
+
+const checkPreferences = () => {
+  if (localStorage.emailPreferences === "true") {
+    emailCheckbox.checked = true;
+  }
+  if (localStorage.profilePreferences === "true") {
+    profileCheckbox.checked = true;
+  }
+  if (localStorage.timezonePreferences) {
+    timeZone.value = localStorage.timezonePreferences;
+  }
+};
+
+checkPreferences();
+
+// Notifications
 
 for (let x = 0; x < alertButtons.length; x++) {
   alertButtons[x].addEventListener("click", () => {
