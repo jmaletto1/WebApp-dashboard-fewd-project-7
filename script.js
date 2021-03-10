@@ -5,11 +5,11 @@ function insertGraph(location, type) {
   var myChart = new Chart(ctx, {
     type: type,
     data: {
-      labels: ["Green", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["9AM", "11AM", "1PM", "3PM", "6PM", "9PM"],
       datasets: [
         {
           label: "# of Votes",
-          data: [1, 2, 7, 10, 14, 19],
+          data: [1, 2, 7, 10, 14, 25],
           backgroundColor: [
             "rgba(106, 90, 205, 0.2)",
             "rgba(54, 162, 235, 0.2)",
