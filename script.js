@@ -1,4 +1,8 @@
-const alertButton = document.querySelector(".content__alert");
+// const alertButton = document.querySelectorAll(".content__alert");
+const alertButtons = document.querySelectorAll(".close--button");
+const alertDivs = document.querySelectorAll(".content__alert");
+const notificationsButton = document.getElementById("notifications--button");
+const chartSelector = document.querySelector(".chart--selector").autofocus;
 
 function insertGraph(location, type) {
   var ctx = document.getElementById(location).getContext("2d");
@@ -8,25 +12,16 @@ function insertGraph(location, type) {
       labels: ["9AM", "11AM", "1PM", "3PM", "6PM", "9PM"],
       datasets: [
         {
-          label: "# of Votes",
+          label: "Website Traffic Throughout the Day",
           data: [1, 2, 7, 10, 14, 25],
-          backgroundColor: [
-            "rgba(106, 90, 205, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)",
-          ],
-          borderColor: [
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)",
-          ],
-          borderWidth: 1,
+          lineTension: 0,
+          pointBackgroundColor: "white",
+          // pointBorderColor: "rgba(150, 132, 208, 1)",
+          pointRadius: 5,
+          pointBorderWidth: 2,
+          backgroundColor: "rgba(117, 120, 186, .25)",
+          borderColor: "rgba(117, 120, 186, 1)",
+          borderWidth: 1.5,
         },
       ],
     },
@@ -50,19 +45,13 @@ function insertBar(location, type) {
   var myChart = new Chart(ctx, {
     type: type,
     data: {
-      labels: ["Green", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["S", "M", "T", "W", "TH", "F", "S"],
       datasets: [
         {
           label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
-          backgroundColor: [
-            "rgb(117, 120, 186)",
-            "rgb(117, 120, 186)",
-            "rgb(117, 120, 186)",
-            "rgb(117, 120, 186)",
-            "rgb(117, 120, 186)",
-            "rgb(117, 120, 186)",
-          ],
+          data: [80, 120, 150, 125, 200, 190, 110],
+          backgroundColor: "rgb(117, 120, 186",
+          barPercentage: 0.5,
           borderWidth: 1,
         },
       ],
@@ -101,6 +90,11 @@ function insertPie(location, type) {
       ],
     },
     responsive: true,
+    options: {
+      legend: {
+        position: "right",
+      },
+    },
   });
 }
 
@@ -108,6 +102,17 @@ insertGraph("myChart", "line");
 insertBar("daily__traffic__chart", "bar");
 insertPie("mobile__users__chart", "doughnut");
 
-alertButton.addEventListener("click", () => {
-  document.querySelector(".content__alert").style.display = "none";
+// alertButton.addEventListener("click", () => {
+//   document.querySelector(".content__alert").style.display = "none";
+// });
+
+for (let x = 0; x < alertButtons.length; x++) {
+  alertButtons[x].addEventListener("click", () => {
+    alertDivs[x].style.display = "none";
+  });
+}
+
+notificationsButton.addEventListener("click", () => {
+  alertDivs.forEach((button) => (button.style.display = "block"));
+  document.querySelector(".dot").style.display = "none";
 });

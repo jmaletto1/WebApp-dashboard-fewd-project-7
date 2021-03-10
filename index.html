@@ -12,7 +12,7 @@
   <body>
     <header class="header__container">
       <h1><span>Your</span>App&trade;</h1>
-      <img src="icons/icon-bell.svg" alt="" />
+      <button id="notifications--button"><img src="icons/icon-bell.svg" alt="" /></button><span class="dot"></span>
       <div class="barrier"></div>
       <img class="header--rounded-image" src="images/member-2.jpg" alt="" />
       <p>Big Jman</p>
@@ -38,9 +38,51 @@
         </div>
 
         <div class="content__alert">
-          <span>Alert</span> Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Pariatur reiciendis aliquam ipsum corporis quod veritatis
-          aspernatur illum laudantium!
+          <span>Alert</span> It seems you have not verified your e-mail address. Please check your spam folder.
+          <button class="alert__button">
+            <svg
+              class="close--button"
+              enable-background="new 0 0 512 512"
+              height="512px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="512px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M74.966,437.013c-99.97-99.97-99.97-262.065,0-362.037c100.002-99.97,262.066-99.97,362.067,0  c99.971,99.971,99.971,262.067,0,362.037C337.032,536.998,174.968,536.998,74.966,437.013z M391.782,120.227  c-75.001-74.985-196.564-74.985-271.534,0c-75.001,74.985-75.001,196.55,0,271.535c74.97,74.986,196.533,74.986,271.534,0  C466.754,316.775,466.754,195.212,391.782,120.227z M188.124,369.137l-45.251-45.266l67.876-67.877l-67.876-67.876l45.251-45.267  L256,210.743l67.877-67.892l45.25,45.267l-67.876,67.876l67.876,67.877l-45.25,45.266L256,301.245L188.124,369.137z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="content__alert alert__hidden">
+          <span>Alert</span> These graphs are currently only accessible to students. You may not use these for commercial projects.
+          <button>
+            <svg
+              class="close--button"
+              enable-background="new 0 0 512 512"
+              height="512px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 512 512"
+              width="512px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M74.966,437.013c-99.97-99.97-99.97-262.065,0-362.037c100.002-99.97,262.066-99.97,362.067,0  c99.971,99.971,99.971,262.067,0,362.037C337.032,536.998,174.968,536.998,74.966,437.013z M391.782,120.227  c-75.001-74.985-196.564-74.985-271.534,0c-75.001,74.985-75.001,196.55,0,271.535c74.97,74.986,196.533,74.986,271.534,0  C466.754,316.775,466.754,195.212,391.782,120.227z M188.124,369.137l-45.251-45.266l67.876-67.877l-67.876-67.876l45.251-45.267  L256,210.743l67.877-67.892l45.25,45.267l-67.876,67.876l67.876,67.877l-45.25,45.266L256,301.245L188.124,369.137z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="content__alert alert__hidden">
+          <span>Alert</span> This page may or may not self destruct later today. Let's see how the day goes. 
           <button>
             <svg
               class="close--button"
@@ -63,8 +105,8 @@
 
         <div class="chart__container">
           <div class="chart__controls">
-            <h3>DAILY COOKIE TRAFFIC</h3>
-            <button class="chart--selector">Hourly</button>
+            <h3>TRAFFIC</h3>
+            <button class="chart--selector" autofocus>Hourly</button>
             <button class="chart--selector">Daily</button>
             <button class="chart--selector">Weekly</button>
             <button class="chart--selector">Monthly</button>
