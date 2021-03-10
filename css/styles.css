@@ -18,9 +18,78 @@ p {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+form {
+  width: 90%;
+}
+
+form input,
+textarea {
+  background: rgba(100, 100, 100, 0.05);
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+}
+
+textarea {
+  padding-top: 0.5rem;
+}
+
+form input {
+  height: 30px;
+}
+
+select {
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  border-radius: 5px;
+  color: rgba(100, 100, 100, 0.8);
+  height: 50px;
+  margin-top: 1.5rem;
+  padding-left: 0.5rem;
+  width: 95%;
+}
+
 button {
   background: none;
   border: none;
+}
+
+.button--cancel {
+  background: grey;
+  border-radius: 5px;
+  color: white;
+  height: 3rem;
+  margin: 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.4s;
+  width: 103%;
+}
+
+.button--submit {
+  background: var(--color-primary);
+  border-radius: 5px;
+  color: white;
+  height: 3rem;
+  margin: 0.5rem;
+  transition: opacity 0.4s;
+  width: 103%;
+}
+
+.button--cancel:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.button--submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button--half {
+  width: 45%;
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 
 .header__container {
@@ -371,6 +440,85 @@ span {
   transform: scale(1.3);
 }
 
+.footer__container {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.settings--row p {
+  color: rgba(100, 100, 100, 0.8);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.settings--row {
+  display: flex;
+}
+
+/* Switch Buttons */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+  margin: 8px 50% 0 auto;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-primary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-primary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(46px);
+  -ms-transform: translateX(46px);
+  transform: translateX(46px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 768px) {
   .main__container {
     grid-template-columns: minmax(80px, 0.5fr) 9fr;
@@ -425,6 +573,19 @@ span {
   }
 
   .member__activity__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recent__activity__container {
+    border-left: 1px solid rgba(100, 100, 100, 0.2);
+  }
+
+  .recent__activity__container h3,
+  .recent__activity__container .member__row {
+    padding-left: 1rem;
+  }
+
+  .footer__container {
     grid-template-columns: 1fr 1fr;
   }
 }
