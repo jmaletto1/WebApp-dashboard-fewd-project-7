@@ -208,6 +208,12 @@ autocomplete({
   },
 });
 
+// Toggler
+
+document.querySelector("#myonoffswitch").addEventListener("click", (e) => {
+  console.log(e);
+});
+
 // users = ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver"];
 
 // userSearch.addEventListener("input", () => {
