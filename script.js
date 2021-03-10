@@ -1,4 +1,3 @@
-// const alertButton = document.querySelectorAll(".content__alert");
 const alertButtons = document.querySelectorAll(".close--button");
 const alertDivs = document.querySelectorAll(".content__alert");
 const notificationsButton = document.getElementById("notifications--button");
@@ -184,14 +183,39 @@ const validateForm = () => {
   alert("Success!");
 };
 
-users = ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver"];
+/* 
+Autocomplete Function 
+*/
 
-userSearch.addEventListener("input", () => {
-  console.log(userSearch.value);
-  if (users.includes(userSearch.value)) {
-    console.log("GOOD!");
-  }
+let users = [
+  { label: "Victoria Chambers", value: "VC" },
+  { label: "Dale Byrd", value: "DB" },
+  { label: "Dawn Wood", value: "DW" },
+  { label: "Dan Oliver", value: "DO" },
+];
+
+autocomplete({
+  input: userSearch,
+  fetch: function (text, update) {
+    text = text.toLowerCase();
+    let suggestions = users.filter((n) =>
+      n.label.toLowerCase().startsWith(text)
+    );
+    update(suggestions);
+  },
+  onSelect: function (item) {
+    this.input.value = item.label;
+  },
 });
+
+// users = ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver"];
+
+// userSearch.addEventListener("input", () => {
+//   console.log(userSearch.value);
+//   if (users.includes(userSearch.value)) {
+//     console.log("GOOD!");
+//   }
+// });
 
 for (let x = 0; x < alertButtons.length; x++) {
   alertButtons[x].addEventListener("click", () => {
