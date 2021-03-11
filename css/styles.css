@@ -7,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -95,10 +96,9 @@ button {
 }
 
 .header__container {
-  height: 80px;
+  height: 70px;
   background-color: var(--color-primary);
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -106,7 +106,9 @@ button {
 
 h1 {
   color: var(--heading-color);
+  font-size: 1.75rem;
   font-weight: normal;
+  letter-spacing: 0.75px;
   padding-left: 15px;
 }
 

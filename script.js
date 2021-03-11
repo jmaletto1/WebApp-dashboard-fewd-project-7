@@ -9,6 +9,7 @@ const weeklySelector = document.querySelector("#weekly--selector");
 const monthlySelector = document.querySelector("#monthly--selector");
 
 const userSearch = document.querySelector("#user--search");
+const cancelButton = document.querySelector(".button--cancel");
 
 function insertGraph(data, labels) {
   var ctx = document.getElementById("myChart").getContext("2d");
@@ -234,6 +235,8 @@ timeZone.addEventListener("change", function () {
   localStorage.setItem("timezonePreferences", `${timeZone.value}`);
 });
 
+// Set localStorage Function
+
 const checkPreferences = () => {
   if (localStorage.emailPreferences === "true") {
     emailCheckbox.checked = true;
@@ -247,6 +250,12 @@ const checkPreferences = () => {
 };
 
 checkPreferences();
+
+// Cancel Button / Remove localStorage
+
+cancelButton.addEventListener("click", () => {
+  localStorage.clear();
+});
 
 // Notifications
 
