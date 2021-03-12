@@ -19,7 +19,6 @@ function insertGraph(data, labels) {
       labels: labels,
       datasets: [
         {
-          label: "Website Traffic Throughout the Day",
           data: data,
           lineTension: 0,
           pointBackgroundColor: "white",
@@ -32,8 +31,11 @@ function insertGraph(data, labels) {
         },
       ],
     },
-    responsive: true,
+    // responsive: true,
     options: {
+      legend: {
+        display: false,
+      },
       scales: {
         yAxes: [
           {
@@ -55,7 +57,6 @@ function insertBar(location, type) {
       labels: ["S", "M", "T", "W", "TH", "F", "S"],
       datasets: [
         {
-          label: "# of Votes",
           data: [80, 120, 150, 125, 200, 190, 110],
           backgroundColor: "rgb(117, 120, 186",
           barPercentage: 0.5,
@@ -65,6 +66,9 @@ function insertBar(location, type) {
     },
     responsive: true,
     options: {
+      legend: {
+        display: false,
+      },
       scales: {
         yAxes: [
           {
