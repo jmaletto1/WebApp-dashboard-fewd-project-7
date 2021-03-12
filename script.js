@@ -22,7 +22,6 @@ function insertGraph(data, labels) {
           data: data,
           lineTension: 0,
           pointBackgroundColor: "white",
-          // pointBorderColor: "rgba(150, 132, 208, 1)",
           pointRadius: 5,
           pointBorderWidth: 2,
           backgroundColor: "rgba(117, 120, 186, .25)",
@@ -31,7 +30,6 @@ function insertGraph(data, labels) {
         },
       ],
     },
-    // responsive: true,
     options: {
       legend: {
         display: false,
@@ -185,7 +183,7 @@ const validateForm = () => {
     alert("Please enter a message!");
     return false;
   }
-  alert("Success!");
+  alert("Message has been delivered successfully!");
 };
 
 /* 

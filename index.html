@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="https://kraaden.github.io/autocomplete/autocomplete.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://kraaden.github.io/autocomplete/autocomplete.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css"
+    />
 
     <title>WebApp Dashboard</title>
     <script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
-
   </head>
 
   <body>
     <header class="header__container">
       <h1><span>Web</span>App&trade;</h1>
-      <button id="notifications--button"><img id="bell--icon" src="icons/icon-bell.svg" alt="" /></button><span class="dot"></span>
+      <button id="notifications--button">
+        <img id="bell--icon" src="icons/icon-bell.svg" alt="" /></button
+      ><span class="dot"></span>
       <div class="barrier"></div>
       <img class="header--rounded-image" src="images/member-2.jpg" alt="" />
       <p>Big Jman</p>
@@ -45,7 +56,8 @@
         </div>
 
         <div class="content__alert">
-          <span>Alert</span> It seems you have not verified your e-mail address. Please check your spam folder.
+          <span>Alert</span> It seems you have not verified your e-mail address.
+          Please check your spam folder.
           <button class="alert__button">
             <svg
               class="close--button"
@@ -67,7 +79,8 @@
         </div>
 
         <div class="content__alert alert__hidden">
-          <span>Alert</span> These graphs are currently only accessible to students. You may not use these for commercial projects.
+          <span>Alert</span> These graphs are currently only accessible to
+          students. You may not use these for commercial projects.
           <button>
             <svg
               class="close--button"
@@ -89,7 +102,8 @@
         </div>
 
         <div class="content__alert alert__hidden">
-          <span>Alert</span> This page may or may not self destruct later today. Let's see how the day goes. 
+          <span>Alert</span> This page may or may not self destruct later today.
+          Let's see how the day goes.
           <button>
             <svg
               class="close--button"
@@ -114,21 +128,29 @@
           <div class="chart__controls">
             <h3>TRAFFIC</h3>
             <div class="chart__button__container">
-              <button class="chart--selector" id="hourly--selector" autofocus>Hourly</button>
-              <button class="chart--selector" id="daily--selector">Daily</button>
-              <button class="chart--selector" id="weekly--selector">Weekly</button>
-              <button class="chart--selector" id="monthly--selector">Monthly</button>
+              <button class="chart--selector" id="hourly--selector" autofocus>
+                Hourly
+              </button>
+              <button class="chart--selector" id="daily--selector">
+                Daily
+              </button>
+              <button class="chart--selector" id="weekly--selector">
+                Weekly
+              </button>
+              <button class="chart--selector" id="monthly--selector">
+                Monthly
+              </button>
             </div>
           </div>
           <canvas id="myChart"></canvas>
         </div>
 
         <div class="secondary__graphs grid__1x2">
-          <div class="secondary__graphs__traffic  container--padding">
+          <div class="secondary__graphs__traffic container--padding">
             <h3>DAILY TRAFFIC</h3>
             <canvas id="daily__traffic__chart"></canvas>
           </div>
-          <div class="secondary__graphs__mobile__users  container--padding">
+          <div class="secondary__graphs__mobile__users container--padding">
             <h3>MOBILE USERS</h3>
             <canvas id="mobile__users__chart"></canvas>
           </div>
@@ -289,175 +311,467 @@
 
           <div class="recent__activity__container container--padding">
             <h3>RECENT ACTIVITY</h3>
-            <div class="new__member__container">             
-               <div class="member__row">
-              <img src="images/member-1.jpg" alt="" />
-              <div class="member--info">
-                <h5>Victoria Chambers commented on YourApp's SEO Tips</h5>
-                <p>4 Hours ago</p>
+            <div class="new__member__container">
+              <div class="member__row">
+                <img src="images/member-1.jpg" alt="" />
+                <div class="member--info">
+                  <h5>Victoria Chambers commented on YourApp's SEO Tips</h5>
+                  <p>4 Hours ago</p>
+                </div>
+                <div class="member--date">
+                  <svg
+                    class="member--read--more"
+                    width="25"
+                    height="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="408.5"
+                        y1="314"
+                        x2="482.5"
+                        y2="265"
+                        id="svg_1"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="5"
+                      />
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="411.5"
+                        y1="219.99998"
+                        x2="480.5"
+                        y2="265.99998"
+                        id="svg_2"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="5"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_6"
+                        y2="12.125"
+                        x2="20.09371"
+                        y1="3.12505"
+                        x1="3.2188"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_7"
+                        y2="11.875"
+                        x2="20.03121"
+                        y1="22.43745"
+                        x1="3.0313"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                    </g>
+                  </svg>
+                </div>
               </div>
-              <div class="member--date">
-                <svg class="member--read--more" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="408.5" y1="314" x2="482.5" y2="265" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="5"/>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="411.5" y1="219.99998" x2="480.5" y2="265.99998" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="5"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="12.125" x2="20.09371" y1="3.12505" x1="3.2188" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="11.875" x2="20.03121" y1="22.43745" x1="3.0313" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                  </g>
-                 
-                 </svg>
-              </div>
-            </div>
 
-            <div class="member__row">
-              <img src="images/member-2.jpg" alt="" />
-              <div class="member--info">
-                <h5>Dale Byrd liked the post Facebook's Changes for 2021.</h5>
-                <p>5 Hours ago</p>
+              <div class="member__row">
+                <img src="images/member-2.jpg" alt="" />
+                <div class="member--info">
+                  <h5>Dale Byrd liked the post Facebook's Changes for 2021.</h5>
+                  <p>5 Hours ago</p>
+                </div>
+                <div class="member--date">
+                  <svg
+                    class="member--read--more"
+                    width="25"
+                    height="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="408.5"
+                        y1="314"
+                        x2="482.5"
+                        y2="265"
+                        id="svg_1"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="5"
+                      />
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="411.5"
+                        y1="219.99998"
+                        x2="480.5"
+                        y2="265.99998"
+                        id="svg_2"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="5"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_6"
+                        y2="12.125"
+                        x2="20.09371"
+                        y1="3.12505"
+                        x1="3.2188"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_7"
+                        y2="11.875"
+                        x2="20.03121"
+                        y1="22.43745"
+                        x1="3.0313"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                    </g>
+                  </svg>
+                </div>
               </div>
-              <div class="member--date">
-                <svg class="member--read--more" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="408.5" y1="314" x2="482.5" y2="265" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="5"/>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="411.5" y1="219.99998" x2="480.5" y2="265.99998" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="5"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="12.125" x2="20.09371" y1="3.12505" x1="3.2188" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="11.875" x2="20.03121" y1="22.43745" x1="3.0313" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                  </g>
-                 
-                 </svg>
-              </div>
-            </div>
 
-            <div class="member__row">
-              <img src="images/member-3.jpg" alt="" />
-              <div class="member--info">
-                <h5>Dawn Wood comented on Facebook's Changes for 2021.</h5>
-                <p>5 Hours ago</p>
+              <div class="member__row">
+                <img src="images/member-3.jpg" alt="" />
+                <div class="member--info">
+                  <h5>Dawn Wood comented on Facebook's Changes for 2021.</h5>
+                  <p>5 Hours ago</p>
+                </div>
+                <div class="member--date">
+                  <svg
+                    class="member--read--more"
+                    width="25"
+                    height="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="408.5"
+                        y1="314"
+                        x2="482.5"
+                        y2="265"
+                        id="svg_1"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="5"
+                      />
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="411.5"
+                        y1="219.99998"
+                        x2="480.5"
+                        y2="265.99998"
+                        id="svg_2"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="5"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_6"
+                        y2="12.125"
+                        x2="20.09371"
+                        y1="3.12505"
+                        x1="3.2188"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_7"
+                        y2="11.875"
+                        x2="20.03121"
+                        y1="22.43745"
+                        x1="3.0313"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                    </g>
+                  </svg>
+                </div>
               </div>
-              <div class="member--date">
-                <svg class="member--read--more" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="408.5" y1="314" x2="482.5" y2="265" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="5"/>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="411.5" y1="219.99998" x2="480.5" y2="265.99998" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="5"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="12.125" x2="20.09371" y1="3.12505" x1="3.2188" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="11.875" x2="20.03121" y1="22.43745" x1="3.0313" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                  </g>
-                 
-                 </svg>
-              </div>
-            </div>
 
-            <div class="member__row">
-              <img src="images/member-4.jpg" alt="" />
-              <div class="member--info">
-                <h5>Dan Oliver posted YourApp's SEO Tips</h5>
-                <p>1 Day ago</p>
-              </div>
-              <div class="member--date">
-                <svg class="member--read--more" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="408.5" y1="314" x2="482.5" y2="265" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="10"/>
-                   <line fill="#7578ba" stroke="#7578ba" opacity="undefined" x1="411.5" y1="219.99998" x2="480.5" y2="265.99998" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined" stroke-width="10"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="12.125" x2="20.09371" y1="3.12505" x1="3.2188" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                   <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="11.875" x2="20.03121" y1="22.43745" x1="3.0313" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="2" stroke="#7578ba" fill="none"/>
-                  </g>
-                 
-                 </svg>
+              <div class="member__row">
+                <img src="images/member-4.jpg" alt="" />
+                <div class="member--info">
+                  <h5>Dan Oliver posted YourApp's SEO Tips</h5>
+                  <p>1 Day ago</p>
+                </div>
+                <div class="member--date">
+                  <svg
+                    class="member--read--more"
+                    width="25"
+                    height="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="408.5"
+                        y1="314"
+                        x2="482.5"
+                        y2="265"
+                        id="svg_1"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="10"
+                      />
+                      <line
+                        fill="#7578ba"
+                        stroke="#7578ba"
+                        opacity="undefined"
+                        x1="411.5"
+                        y1="219.99998"
+                        x2="480.5"
+                        y2="265.99998"
+                        id="svg_2"
+                        stroke-linejoin="undefined"
+                        stroke-linecap="undefined"
+                        stroke-width="10"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_6"
+                        y2="12.125"
+                        x2="20.09371"
+                        y1="3.12505"
+                        x1="3.2188"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                      <line
+                        stroke-linecap="undefined"
+                        stroke-linejoin="undefined"
+                        id="svg_7"
+                        y2="11.875"
+                        x2="20.03121"
+                        y1="22.43745"
+                        x1="3.0313"
+                        opacity="undefined"
+                        fill-opacity="null"
+                        stroke-opacity="null"
+                        stroke-dasharray="null"
+                        stroke-width="2"
+                        stroke="#7578ba"
+                        fill="none"
+                      />
+                    </g>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-        </div></div>
+        </div>
 
-<div class="footer__container">
-  <div class="footer__contact__form  container--padding">
-    <h3>MESSAGE USER</h3>
-    <form action="#" name="messageForm" onSubmit="return validateForm()">
-      <input type="text" name="username" placeholder="Search for User" id="user--search">
-      <textarea name="message" id="message" rows="8" placeholder="Message for User"></textarea>
-      <button class="button--submit">SEND</button>
-    </form>
-  </div>
-  <div class="footer__settings__form  container--padding">
-    <h3>SETTINGS</h3>
-    <div class="settings--row">
-      <p>Send Email Notifications</p>
-      <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
-        <label class="onoffswitch-label" for="myonoffswitch">
-            <span class="onoffswitch-inner"></span>
-            <span class="onoffswitch-switch"></span>
-        </label>
-    </div>
-    </div>
-    <div class="settings--row">
-      <p>Set Profile to Public</p>
-      <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitchtwo" class="onoffswitch-checkbox" id="myonoffswitchtwo" tabindex="0">
-        <label class="onoffswitch-label" for="myonoffswitchtwo">
-            <span class="onoffswitch-inner"></span>
-            <span class="onoffswitch-switch"></span>
-        </label>
-    </div>
+        <div class="footer__container">
+          <div class="footer__contact__form container--padding">
+            <h3>MESSAGE USER</h3>
+            <form
+              action="#"
+              name="messageForm"
+              onSubmit="return validateForm()"
+            >
+              <input
+                type="text"
+                name="username"
+                placeholder="Search for User"
+                id="user--search"
+              />
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                placeholder="Message for User"
+              ></textarea>
+              <button class="button--submit">SEND</button>
+            </form>
+          </div>
+          <div class="footer__settings__form container--padding">
+            <h3>SETTINGS</h3>
+            <div class="settings--row">
+              <p>Send Email Notifications</p>
+              <div class="onoffswitch">
+                <input
+                  type="checkbox"
+                  name="onoffswitch"
+                  class="onoffswitch-checkbox"
+                  id="myonoffswitch"
+                  tabindex="0"
+                />
+                <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+            <div class="settings--row">
+              <p>Set Profile to Public</p>
+              <div class="onoffswitch">
+                <input
+                  type="checkbox"
+                  name="onoffswitchtwo"
+                  class="onoffswitch-checkbox"
+                  id="myonoffswitchtwo"
+                  tabindex="0"
+                />
+                <label class="onoffswitch-label" for="myonoffswitchtwo">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+            <select name="timezone_offset" id="timezone-offset" class="span5">
+              <option selected>Select Timezone</option>
+              <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+              <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+              <option value="-10:00">(GMT -10:00) Hawaii</option>
+              <option value="-09:50">(GMT -9:30) Taiohae</option>
+              <option value="-09:00">(GMT -9:00) Alaska</option>
+              <option value="-08:00">
+                (GMT -8:00) Pacific Time (US &amp; Canada)
+              </option>
+              <option value="-07:00">
+                (GMT -7:00) Mountain Time (US &amp; Canada)
+              </option>
+              <option value="-06:00">
+                (GMT -6:00) Central Time (US &amp; Canada), Mexico City
+              </option>
+              <option value="-05:00">
+                (GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima
+              </option>
+              <option value="-04:50">(GMT -4:30) Caracas</option>
+              <option value="-04:00">
+                (GMT -4:00) Atlantic Time (Canada), Caracas, La Paz
+              </option>
+              <option value="-03:50">(GMT -3:30) Newfoundland</option>
+              <option value="-03:00">
+                (GMT -3:00) Brazil, Buenos Aires, Georgetown
+              </option>
+              <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+              <option value="-01:00">
+                (GMT -1:00) Azores, Cape Verde Islands
+              </option>
+              <option value="+00:00">
+                (GMT) Western Europe Time, London, Lisbon, Casablanca
+              </option>
+              <option value="+01:00">
+                (GMT +1:00) Brussels, Copenhagen, Madrid, Paris
+              </option>
+              <option value="+02:00">
+                (GMT +2:00) Kaliningrad, South Africa
+              </option>
+              <option value="+03:00">
+                (GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg
+              </option>
+              <option value="+03:50">(GMT +3:30) Tehran</option>
+              <option value="+04:00">
+                (GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi
+              </option>
+              <option value="+04:50">(GMT +4:30) Kabul</option>
+              <option value="+05:00">
+                (GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent
+              </option>
+              <option value="+05:50">
+                (GMT +5:30) Bombay, Calcutta, Madras, New Delhi
+              </option>
+              <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+              <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+              <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+              <option value="+07:00">
+                (GMT +7:00) Bangkok, Hanoi, Jakarta
+              </option>
+              <option value="+08:00">
+                (GMT +8:00) Beijing, Perth, Singapore, Hong Kong
+              </option>
+              <option value="+08:75">(GMT +8:45) Eucla</option>
+              <option value="+09:00">
+                (GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk
+              </option>
+              <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+              <option value="+10:00">
+                (GMT +10:00) Eastern Australia, Guam, Vladivostok
+              </option>
+              <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+              <option value="+11:00">
+                (GMT +11:00) Magadan, Solomon Islands, New Caledonia
+              </option>
+              <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+              <option value="+12:00">
+                (GMT +12:00) Auckland, Wellington, Fiji, Kamchatka
+              </option>
+              <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+              <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+              <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+            </select>
 
-    </div>
-      <select name="timezone_offset" id="timezone-offset" class="span5">
-        <option selected>Select Timezone</option>
-        <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
-        <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
-        <option value="-10:00">(GMT -10:00) Hawaii</option>
-        <option value="-09:50">(GMT -9:30) Taiohae</option>
-        <option value="-09:00">(GMT -9:00) Alaska</option>
-        <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
-        <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
-        <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
-        <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
-        <option value="-04:50">(GMT -4:30) Caracas</option>
-        <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
-        <option value="-03:50">(GMT -3:30) Newfoundland</option>
-        <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
-        <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
-        <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
-        <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
-        <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
-        <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
-        <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
-        <option value="+03:50">(GMT +3:30) Tehran</option>
-        <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
-        <option value="+04:50">(GMT +4:30) Kabul</option>
-        <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
-        <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
-        <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
-        <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
-        <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
-        <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
-        <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
-        <option value="+08:75">(GMT +8:45) Eucla</option>
-        <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
-        <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
-        <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
-        <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
-        <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
-        <option value="+11:50">(GMT +11:30) Norfolk Island</option>
-        <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
-        <option value="+12:75">(GMT +12:45) Chatham Islands</option>
-        <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
-        <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
-      </select>
-
-      <div class="button__container">
-        <button class="button--submit button--half">SAVE</button>
-        <button class="button--cancel button--half">CANCEL</button>
-      </div>
-
-  </div>
-</div>
-
+            <div class="button__container">
+              <button class="button--submit button--half">SAVE</button>
+              <button class="button--cancel button--half">CANCEL</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="script.js"></script>

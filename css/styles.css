@@ -233,6 +233,8 @@ span {
 }
 
 .menu__bar img {
+  fill: white;
+  max-height: 35px;
   max-width: 35px;
 }
 
@@ -516,9 +518,9 @@ button:hover {
 .onoffswitch {
   position: relative;
   min-width: 90px;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none; */
   margin-left: auto;
 }
 .onoffswitch-checkbox {
