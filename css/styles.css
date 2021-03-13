@@ -76,7 +76,6 @@ button {
   color: white;
   font-weight: 600;
   height: 3rem;
-  /* margin: 0.5rem 0 1rem; */
   margin-top: auto;
   transition: opacity 0.4s;
   width: 100%;
@@ -242,16 +241,29 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+  height: 70px;
 }
 
 .menu__list li {
   list-style: none;
-  display: inline-block;
-  width: 20%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin: 0 10px;
   opacity: 0.5;
   transition: opacity 0.4s ease-out;
+}
+
+.menu__list li:first-of-type {
+  border: 3px solid transparent;
+  border-bottom: 3px solid lightgreen;
+}
+.menu__list li img {
+  width: 50px;
+  height: 50px;
 }
 
 .menu__bar ul li:hover {
@@ -274,7 +286,6 @@ span {
   border: 2px solid rgba(100, 100, 100, 0.2);
   border-radius: 3px;
   height: 50%;
-  /* margin-right: 2rem; */
   max-width: 250px;
   width: 50%;
 }
@@ -332,7 +343,6 @@ span {
 .chart__controls button {
   height: 30px;
   margin-right: 0.5rem;
-  /* padding: 0 1rem; */
 }
 
 button:hover {
@@ -378,7 +388,6 @@ button:hover {
 
 .social__stats {
   height: 400px;
-  /* margin: 3rem 0; */
   max-width: 100%;
 }
 
@@ -518,9 +527,6 @@ button:hover {
 .onoffswitch {
   position: relative;
   min-width: 90px;
-  /* -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; */
   margin-left: auto;
 }
 .onoffswitch-checkbox {
@@ -697,23 +703,16 @@ button:hover {
 
   .menu__bar {
     height: 100%;
+    padding-top: 30px;
   }
-
-  .menu__list {
-    flex-direction: column;
-    padding-top: 20px;
-    padding-left: 0;
-    width: 35px;
-  }
-
-  .menu__list {
-    align-items: center;
-  }
-
   .menu__list li {
-    margin: 0 auto 35px 20px;
-    text-align: center;
-    width: 35px;
+    height: 50px;
+    margin: 0 0 20px 0;
+  }
+  .menu__list li:first-of-type {
+    border: 3px solid transparent;
+    border-left: 3px solid lightgreen;
+    width: 100%;
   }
 
   .settings--row p {
