@@ -684,7 +684,7 @@
               </div>
             </div>
             <select name="timezone_offset" id="timezone-offset" class="span5">
-              <option selected>Select Timezone</option>
+              <option value="default" selected>Select Timezone</option>
               <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
               <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
               <option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -768,7 +768,9 @@
             </select>
 
             <div class="button__container">
-              <button class="button--submit button--half">SAVE</button>
+              <button id="button--save" class="button--submit button--half">
+                SAVE
+              </button>
               <button class="button--cancel button--half">CANCEL</button>
             </div>
           </div>

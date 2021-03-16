@@ -9,6 +9,7 @@ const weeklySelector = document.querySelector("#weekly--selector");
 const monthlySelector = document.querySelector("#monthly--selector");
 
 const userSearch = document.querySelector("#user--search");
+const saveButton = document.querySelector("#button--save");
 const cancelButton = document.querySelector(".button--cancel");
 
 function insertGraph(data, labels) {
@@ -217,26 +218,6 @@ const emailCheckbox = document.querySelector("#myonoffswitch");
 const profileCheckbox = document.querySelector("#myonoffswitchtwo");
 const timeZone = document.querySelector("#timezone-offset");
 
-emailCheckbox.addEventListener("change", function () {
-  if (this.checked) {
-    localStorage.setItem("emailPreferences", "true");
-  } else {
-    localStorage.setItem("emailPreferences", "false");
-  }
-});
-
-profileCheckbox.addEventListener("change", function () {
-  if (this.checked) {
-    localStorage.setItem("profilePreferences", "true");
-  } else {
-    localStorage.setItem("profilePreferences", "false");
-  }
-});
-
-timeZone.addEventListener("change", function () {
-  localStorage.setItem("timezonePreferences", `${timeZone.value}`);
-});
-
 // Set localStorage Function
 
 const checkPreferences = () => {
@@ -253,10 +234,28 @@ const checkPreferences = () => {
 
 checkPreferences();
 
+// Save Button
+saveButton.addEventListener("click", () => {
+  if (emailCheckbox.checked) {
+    localStorage.setItem("emailPreferences", "true");
+  } else {
+    localStorage.setItem("emailPreferences", "false");
+  }
+  if (profileCheckbox.checked) {
+    localStorage.setItem("profilePreferences", "true");
+  } else {
+    localStorage.setItem("profilePreferences", "false");
+  }
+  localStorage.setItem("timezonePreferences", `${timeZone.value}`);
+});
+
 // Cancel Button / Remove localStorage
 
 cancelButton.addEventListener("click", () => {
   localStorage.clear();
+  emailCheckbox.checked = false;
+  profileCheckbox.checked = false;
+  timeZone.value = "default";
 });
 
 // Notifications
