@@ -416,9 +416,11 @@ button:hover {
 .social__icon__image {
   border-radius: 50px;
   background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
   margin: auto 0;
   padding: 1rem;
-  height: auto;
+  height: 30px;
   width: 30px;
 }
 
